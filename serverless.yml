@@ -62,13 +62,29 @@ functions:
   hello:
     handler: handler.hello
     events:
-      - http: GET hello      
+      - http: GET hello
+
   hi:
     handler: handler.hello
     events:
       - http:
           path: hi
           method: GET
+
+  testpost:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: POST
+
+  setest:
+    handler: handler.setest
+    events:
+      - http:
+          path: setest
+          method: POST
+
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

@@ -14,6 +14,23 @@ def hello(event, context):
 
     return response
 
+def setest(event, context):
+
+    body_parsed = json.loads(event['body'])
+
+    body = {
+        "message": "Behold! This is StackExpress testing in their secret Lab!",
+        "body_parsed": body_parsed,
+        "ok": "ok"
+    }
+
+    response = {
+        "statusCode": 200,
+        "body": json.dumps(body)
+    }
+
+    return response
+
     # Use this code if you don't use the http event with the LAMBDA-PROXY
     # integration
     """
