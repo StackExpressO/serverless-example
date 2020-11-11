@@ -1,4 +1,7 @@
-# serverless-example
+# serverless-example (Parsing POST request with AWS Lambda)
+
+
+This code example accept Post request and parse the JSON contents with Lambda
 
 - Sample request
 
